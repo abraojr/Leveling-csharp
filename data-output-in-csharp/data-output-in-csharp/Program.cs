@@ -7,24 +7,14 @@ namespace data_output_in_csharp
     {
         static void Main(string[] args)
         {
-            char gender = 'M';
-            string name = "Abrão";
+            int age = 32;
             double balance = 10.56785;
+            string name = "Maria";
 
-            Console.WriteLine(gender);
-            Console.WriteLine(name);
-            Console.WriteLine(balance);
-            Console.WriteLine(balance.ToString("F2"));
-            Console.WriteLine(balance.ToString("F4"));
-            Console.WriteLine(balance.ToString("F4", CultureInfo.InvariantCulture));
+            Console.WriteLine("{0} is {1} years old and has balance equal to {2:F2} Reais", name, age, balance);
 
             /*OUTPUT:
-            M
-            Abrão
-            10,56785
-            10,57
-            10,5678
-            10.5678 */
+            Maria is 32 years old and has a balance equal to 10.57 Reais */
         }
     }
 }
