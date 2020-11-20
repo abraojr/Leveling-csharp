@@ -11,7 +11,7 @@ namespace data_output_in_csharp
             double balance = 10.56785;
             string name = "Maria";
 
-            Console.WriteLine($"{name} is {age} years old and has a balance equal to {balance:F2} Reais", name, age, balance);
+            Console.WriteLine(name + " is " + age + " years old and has a balance equal to " + balance.ToString("F2", CultureInfo.InvariantCulture) + " Reais");
 
             /*OUTPUT:
             Maria is 32 years old and has a balance equal to 10.57 Reais */
