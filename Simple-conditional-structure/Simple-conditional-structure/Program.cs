@@ -6,15 +6,17 @@ namespace Simple_conditional_structure
     {
         static void Main(string[] args)
         {
-            int x = 10;
-
-            Console.WriteLine("Good morning");
-
-            if (x < 5)
+            Console.Write("Enter an integer: ");
+            int x = int.Parse(Console.ReadLine());
+            if (x % 2 == 0)
             {
-                Console.WriteLine("Good afternoon");
+                Console.WriteLine("Pair!");
             }
-            Console.WriteLine("Good night");
+            else
+            {
+                Console.WriteLine("Odd!");
+
+            }
         }
     }
 }
