@@ -6,16 +6,19 @@ namespace Simple_conditional_structure
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter an integer: ");
-            int x = int.Parse(Console.ReadLine());
-            if (x % 2 == 0)
+            Console.WriteLine("What is the current time?");
+            int hour = int.Parse(Console.ReadLine());
+            if (hour < 12)
             {
-                Console.WriteLine("Pair!");
+                Console.WriteLine("Good morning!");
+            }
+            else if (hour < 18)
+            {
+                Console.WriteLine("Good afternoon!");
             }
             else
             {
-                Console.WriteLine("Odd!");
-
+                Console.WriteLine("Good night!");
             }
         }
     }
