@@ -13,18 +13,26 @@ namespace functions
             int n2 = int.Parse(Console.ReadLine());
             int n3 = int.Parse(Console.ReadLine());
 
-            if (n1 > n2 && n1 > n3)
+            double result = theLargest(n1, n2, n3);
+            Console.WriteLine("The largest number is : " + result);
+
+        }
+        static int theLargest(int a, int b, int c)
+        {
+            int m;
+            if (a > b && a > c)
             {
-                Console.WriteLine("The largest number is: " + n1);
+                m = a;
             }
-            else if (n2 > n3)
+            else if (b > c)
             {
-                Console.WriteLine("The largest number is: " + n2);
+                m = b;
             }
             else
             {
-                Console.WriteLine("The largest number is: " + n3);
+                m = c;
             }
+            return m;
         }
     }
 }
